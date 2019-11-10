@@ -1,7 +1,17 @@
+import {Component} from 'react'
 import React from 'react'
+import Player from './Player'
+import GameAdmin from './GameAdmin'
 
-const App = () => (
-  <h1>Minimal React</h1>  
-)
+class App extends Component{
+  render(){
+    return(
+       <>
+      <GameAdmin/>
+      </>  
+      )
+  }
+ 
 
-export default App
+}
+export default App 
