@@ -29,8 +29,8 @@ turnChangeEventHandler(event){
   render(){
     return (
     <div>
-        <Player number='one' name={this.state.nameone} times='3'  turn={this.state.turn} turnChangeEventHandler={this.turnChangeEventHandler}/>
-        <Player number='two' name={this.state.nametwo} times='4'  turn={this.state.turn+1} turnChangeEventHandler={this.turnChangeEventHandler}/>
+        <Player number='One' name={this.state.nameone} startTurn={0} turn={this.state.turn} turnChangeEventHandler={this.turnChangeEventHandler}/>
+        <Player number='Two' name={this.state.nametwo} startTurn={1}  turn={this.state.turn+1} turnChangeEventHandler={this.turnChangeEventHandler}/>
         
         <div style={{ borderStyle: 'solid', borderWidth: 5, margin: 20 }}>
           <>Set Name of Player One: </>
